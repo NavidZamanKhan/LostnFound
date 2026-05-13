@@ -5,13 +5,15 @@ A secure web application where users can report lost or found items and verify t
 ## Tech Stack
 
 ### Frontend
+
 - **Framework**: [Next.js](https://nextjs.org/) (App Router)
 - **Library**: React 19
 - **Styling**: Tailwind CSS v4
 - **Language**: TypeScript
 
 ### Backend
-- **Framework**: [Django](https://www.djangoproject.com/) 6.0
+
+- **Framework**: [Django](https://www.djangoproject.com/) 6.0.5
 - **Database**: PostgreSQL (configured via environment variables) / SQLite (local dev default)
 - **Language**: Python
 
@@ -61,18 +63,23 @@ The backend logic is modularized into distinct Django apps aligning with core sy
 ## Getting Started
 
 ### Prerequisites
+
 - **Node.js** (v18+ recommended)
 - **Python** (v3.10+ recommended)
 - **PostgreSQL** (Optional for local testing if using SQLite)
 
 ### 1. Environment Setup
+
 Clone the repository and prepare your environment configuration:
+
 ```bash
 cp .env.example .env
 ```
+
 Update the `.env` file with your specific database credentials and secret keys.
 
 ### 2. Backend Setup
+
 Navigate to the backend directory, set up your virtual environment, and apply migrations:
 
 ```bash
@@ -94,9 +101,11 @@ python manage.py migrate
 # Start the development server
 python manage.py runserver
 ```
+
 The Django backend API will be accessible at `http://127.0.0.1:8000/`.
 
 ### 3. Frontend Setup
+
 Open a new terminal, navigate to the frontend directory, install dependencies, and start the development server:
 
 ```bash
@@ -106,4 +115,5 @@ npm install
 # Start the development server
 npm run dev
 ```
+
 The Next.js application will be running at `http://localhost:3000/`.
